@@ -23,9 +23,8 @@ public class AutoForward extends CommandOpMode {
         waitForStart();
         while (opModeIsActive() && !isStopRequested()) {
             schedule(new MoveFB(drive,40, 1));
-            requestOpModeStop();
-            stop();
 
+            stop();
         }
 
         drive.positionMode();

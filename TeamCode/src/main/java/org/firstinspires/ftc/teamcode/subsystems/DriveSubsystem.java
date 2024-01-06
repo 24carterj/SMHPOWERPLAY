@@ -75,6 +75,9 @@ public class DriveSubsystem extends SubsystemBase {
         backLeft.setZeroPowerBehavior(Motor.ZeroPowerBehavior.BRAKE);
         backRight.setZeroPowerBehavior(Motor.ZeroPowerBehavior.BRAKE);
 
+        frontLeft.setInverted(true);
+        backRight.setInverted(true);
+
         // imu for gyroscope
 
         // imu = new RevIMU(hwMap);
